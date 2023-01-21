@@ -1,0 +1,24 @@
+{
+  "name": "to-do-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/todo-im/todo-im.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/todo-im/todo-im.github.io/issues"
+  },
+  "homepage": "https://github.com/todo-im/todo-im.github.io#readme",
+  "dependencies": {
+    "lit-html": "^2.6.1",
+    "lite-server": "^2.6.1",
+    "page": "^1.11.6"
+  }
+}
