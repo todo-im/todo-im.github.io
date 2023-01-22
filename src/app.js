@@ -1,5 +1,3 @@
-import * as requester from '../src/data/api.js'
+import { default as page } from './lib/page.mjs';
 
-window.requester = requester;
 
-console.log('Hello');
