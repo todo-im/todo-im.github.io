@@ -1,3 +1,5 @@
+import { getUserData } from "../utils.js";
+
 const settings = {
     host: 'https://parseapi.back4app.com',
     appId: '9WmSPe4rAwgdhoXBMDzkWWX2wcr3vhhLFGF22TLe',
@@ -32,6 +34,12 @@ function getOptions(method, body) {
             "X-Parse-Application-Id": settings.appId,
             "X-Parse-Javascript-Key": settings.jsId
         }
+    }
+
+    const user = getUserData();
+
+    if (user) {
+        options.headers['X-Parse-Session-Token'] = user.sessionToken;
     }
 
     if (body) {
